@@ -38,10 +38,10 @@ for (let i = 1; i <= 3; i++) {
     });
   }
 
-  const benzinaCars = cars.filter(car => car.alimentazione = "benzina");
+  const benzinaCars = cars.filter(car => car.alimentazione === "benzina");
 
-  const dieselCars = cars.filter(car => car.alimentazione = "diesel");
+  const dieselCars = cars.filter(car => car.alimentazione === "diesel");
 
-  const otherCars = cars.filter(car => car.alimentazione = "elettrica");
+  const otherCars = cars.filter(car => car.alimentazione === "elettrica");
 
   console.log(benzinaCars, dieselCars, otherCars);
